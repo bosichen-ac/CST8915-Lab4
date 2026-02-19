@@ -35,4 +35,4 @@
 
 ## Challenges
 
-At first I created a VM with 1GB RAM, this VM will crash and need to restart each time when building the Docker images and starting the services. I need to swith to another one of 4GB RAM to let everything build and run smoothly.
+At first I created a VM with 1GB RAM, this VM will crash and need to restart each time when creating the containers from images or starting the services. I need to switch to another one with 4GB RAM to let everything run smoothly. The RAM matters.
