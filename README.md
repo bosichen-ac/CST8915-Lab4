@@ -21,7 +21,7 @@
    
 2. Explain how Docker's layered architecture improves efficiency.
    
-   Each layer is representing a set of filesystem difference. An image is formed by multiple layers stacking on top of eachother. This layered structure makes it easy to reuse the base layers shared by different images, and also minimizes the storage by storing the shared layers only once. 
+   Each layer is representing a set of filesystem difference. An image is composed by multiple layers stacking on top of eachother. This layered structure makes it easy to reuse the base layers shared by different images, and also minimizes the storage by storing the shared layers only once. 
   
 3. Why does each container get its own writable layer?
    
@@ -29,10 +29,10 @@
    
 4. What are the benefits of using Docker Compose over running containers individually?
 
-   When you have an application with multiple Docker service to run, it is easier to orchestrate the Docker images using a Docker Compose together.
+   When you have an application with multiple Docker services to run, it is easier to orchestrate the Docker images using Docker Compose. By defining the multi-container Docker application in one YAML file, you can configure and manage the multi-container Docker application as a single application.
 
 ---
 
 ## Challenges
 
-At first I created a VM with 1GB RAM, this VM will crash and need to restart when building the docker images and starting the services. I need to swith to another one of 4GB RAM to let it build and run smoothly.
+At first I created a VM with 1GB RAM, this VM will crash and need to restart each time when building the Docker images and starting the services. I need to swith to another one of 4GB RAM to let everything build and run smoothly.
